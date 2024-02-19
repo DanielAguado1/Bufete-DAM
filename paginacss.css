@@ -10,6 +10,7 @@ header{
     padding: 0;
     margin: 0;
     
+    
 }
 nav ul{
     padding: 0;
@@ -17,7 +18,7 @@ nav ul{
     width: 100%;
     height: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-size: larger;
 }
@@ -93,6 +94,7 @@ nav ul li a:hover{
     width: 35%;
     background-color: #c7a670;
     color: #5f432f;
+    transition: 1s;
 }
 
 .pagina-1{
@@ -162,6 +164,11 @@ nav ul li a:hover{
     align-items: center;
     width: 50%;
 }
+.img-casos{
+    margin-top: 20px;
+    width: 30%;
+    height: 30%; 
+}
 .pagina-4{
     margin: 0;
     padding-top: 8%;
@@ -209,34 +216,37 @@ img{
     width: 100%;
     height: 100vh;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 4%;
     color: #5f432f;
     background-color:  rgb(216,196,153,0.5);
 }
-.content-pag5{
-    display: flex;
-    justify-content: center;
+.content-pag5 {
     width: 100%;
     height: 100%;
-}
-
-.Formulario{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+}
+.formulario-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%
+    
+}
+.Formulario{
     padding: 40px;
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 70%;
-    width: 50%;
-    background-color: #ae7c48;
-    margin-top: 100px;
+    height: 80%;
+    width: 60%;
+    background-color: rgba(199, 138, 72, 0.9);
+    margin-top: 50px;
 
 }
+
 #edad{
-    width: 180px;
+    width: 30px;
     height: 30px;
 }
 #nombre{
@@ -248,23 +258,69 @@ img{
 #email{
     height: 30px;
 }
+.form2{ 
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #332217;
+    margin-bottom: 10px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
 .form1{ 
     padding: 10px;
     width: 100%;
     margin-top: 20px;
     color: #332217;
     margin-bottom: 10px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.form2{
-    margin-top: 40px;
+.part-form{
+    width: 30%;
+    height: 300px;
+    
 }
-.btn{
-    background-color: silver;
-    color:#332217;
-    height: 35px;
-    width: 20%;
+.form{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #332217;
+    margin-bottom: 10px;
+    height: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    row-gap: 20px;
 }
 
+.btn{
+    background-color:#5f432f;
+    color:#c7a670;
+    height: 35px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.btn:hover{
+    background-color: #c7a670;
+    color: #332217;
+}
 
 textarea{
     width: 100%;
@@ -278,5 +334,107 @@ textarea{
     height: 20vh;
     background-color: #332217;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #c7a670;
+    
+
 }
+.titulo-contacto{
+    padding-top: 1%;
+    
+
+}
+.contacto{
+    padding-left: 1%;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-left:5% ;
+    
+    
+}
+.img-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.img-footer{
+    height: 10%;
+    
+}
+.privacidad{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+}
+.ubicacion{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ubicacion h5 a{
+    text-decoration: none;
+    color: #c7a670;
+    
+}
+.button{
+    width: 10%;
+}
+.pagos{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1000px) {
+   
+    .inicio{
+        height: 100%;
+        width: 50%;
+    }
+  .pagina4-titulo{
+    font-size: 8px;
+    
+  }
+  .formulario-content{
+    gap: 30%;
+  }
+  .card-casos{
+    width: 100%;
+  }
+ .content-pag4{
+    width: 100%;
+ }
+
+   
+}
+ @media only screen and (max-width: 1300px){
+    .barra-inicio{
+        font-size: 12px;
+        height: 10%;
+        
+    }
+    nav ul{
+        flex-direction: column;
+        height: 100%;
+        width: 20%;
+    }
+        .inicio {
+            height: 100%;
+            width: 50%;
+        }
+    }
